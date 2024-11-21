@@ -19,6 +19,7 @@ app.set('views', viewsPath);
 app.set('view engine', 'ejs');
 app.use(express.json())
 app.use('/api',router)
+app.use('/',router)
 
 async function startApp (){
     try{

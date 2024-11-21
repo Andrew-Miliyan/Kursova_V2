@@ -3,7 +3,7 @@ import PostController from './PostController.js'
 import AccountsController from './AccountsController.js'
 
 const router = new Router()
-
+router.get('/',AccountsController.register)
 router.get('/login',AccountsController.login)
 router.post('/login',AccountsController.loginValidate)
 
