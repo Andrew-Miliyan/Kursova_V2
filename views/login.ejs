@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head'); %>
+  <%- include('./partials/styleLogin'); %>
+<body>
+  <div class="container">
+    <div class="row">
+      <h1><%= title%></h1>
+      <form action="/api/login" method="post">  <div>
+        <label for="login">Ім'я</label>
+        <input type="text" id="login" name="login" required>
+      </div>
+      <div>
+        <label for="password">Пароль</label>
+        <input type="password" id="password" name="password" placeholder="***********" required>
+      </div>
+      <button type="submit">Увійти</button>
+      <a href="/api/register">Не маю аккаунту</a>
+    </form>
+    </div>
+    
+  </div>
+</body>
+<div class="footer">
+  <h4>&copy;Всі права захищені</h4>
+  <p>Розробник: курсант 212 навчальної групи Андрій Мілян</p>
+</div>
+</body>
+</html>
+
+</html>
